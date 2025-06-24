@@ -1,0 +1,131 @@
+/**
+ * Custom Fields CSS for Wayback WordPress Importer.
+ *
+ * @since      1.0.0
+ * @package    Wayback_WP_Importer
+ */
+
+/* Custom Field Selectors Section */
+.custom-field-selectors-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.custom-field-selectors-section h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.custom-field-selector-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.custom-field-selector {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Custom Field Tags */
+.custom-field-key-tag,
+.custom-field-selector-tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background: #f1f1f1;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.custom-field-key-tag span,
+.custom-field-selector-tag span {
+    margin-right: 10px;
+}
+
+.remove-custom-field-key,
+.remove-custom-field-selector {
+    background: none;
+    border: none;
+    color: #a00;
+    cursor: pointer;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.remove-custom-field-key:hover,
+.remove-custom-field-selector:hover {
+    color: #dc3232;
+}
+
+/* Custom Fields Preview */
+#custom-fields-preview {
+    margin-bottom: 20px;
+}
+
+.custom-fields-preview-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.custom-fields-preview-table th,
+.custom-fields-preview-table td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+}
+
+.custom-fields-preview-table th {
+    background: #f9f9f9;
+    font-weight: 600;
+}
+
+.custom-field-value {
+    max-width: 300px;
+    overflow-wrap: break-word;
+}
+
+.custom-field-source {
+    font-size: 12px;
+    color: #666;
+    max-width: 200px;
+    overflow-wrap: break-word;
+}
+
+/* Custom Field Rows */
+.custom-field-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.custom-field-row .custom-field-key {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.custom-field-row .custom-field-value {
+    width: 60%;
+    margin-right: 10px;
+}
+
+.custom-field-row .remove-custom-field {
+    align-self: center;
+}
+
+/* Spinner */
+#extract-custom-fields-btn + .spinner {
+    float: none;
+    margin-top: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+}

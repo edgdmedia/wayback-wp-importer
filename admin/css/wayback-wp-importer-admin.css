@@ -1,0 +1,461 @@
+/**
+ * Admin CSS for Wayback WordPress Importer.
+ *
+ * @since      1.0.0
+ * @package    Wayback_WP_Importer
+ */
+
+/* General Styles */
+.wayback-wp-importer {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.wayback-wp-importer-intro {
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.wayback-wp-importer-form {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Tab Navigation Styles */
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+/* Tab Content Visibility */
+.wayback-tab-content {
+    display: none;
+}
+
+.wayback-tab-content.active {
+    display: block !important;
+}
+
+/* Ensure tab buttons are visible */
+.nav-tab {
+    display: inline-block;
+    margin: 0 0.2em 0 0;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.71428571;
+    font-weight: 600;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-tab-active,
+.nav-tab-active:focus,
+.nav-tab-active:focus:active,
+.nav-tab-active:hover {
+    border-bottom: 1px solid #f1f1f1;
+    background: #fff;
+    color: #000;
+}
+
+/* Batch Import Styles */
+.batch-posts-list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.batch-import-actions {
+    margin: 15px 0;
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+    height: 20px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #0073aa;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.progress-status {
+    margin-top: 10px;
+}
+
+/* Import Results Styles */
+.import-details {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.import-details li.success {
+    color: #46b450;
+}
+
+.import-details li.error {
+    color: #dc3232;
+}
+
+/* Imported Post Row Styles */
+tr.imported-success {
+    background-color: #ecf7ed !important;
+}
+
+tr.imported-error {
+    background-color: #fbeaea !important;
+}
+
+/* Post Preview Snippet */
+.post-preview-snippet {
+    max-height: 100px;
+    overflow-y: auto;
+    font-size: 12px;
+}
+
+.wayback-wp-importer .spinner {
+    float: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Preview Styles */
+#wayback-content-preview {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.wayback-preview-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.wayback-preview-title {
+    flex: 1 0 100%;
+}
+
+.wayback-meta-item {
+    flex: 1 0 45%;
+    margin-bottom: 15px;
+}
+
+.wayback-preview-featured-image {
+    margin-bottom: 20px;
+}
+
+#featured-image-preview img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.wayback-preview-content {
+    margin-bottom: 20px;
+}
+
+.wayback-preview-excerpt {
+    margin-bottom: 20px;
+}
+
+.wayback-preview-comments {
+    margin-bottom: 20px;
+}
+
+.wayback-comments-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wayback-comments-list li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment-date {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.wayback-import-actions {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.wayback-import-actions button {
+    margin-right: 10px;
+}
+
+/* Progress Bar Styles */
+.import-progress-container {
+    margin: 20px 0;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 5px;
+    position: relative;
+    height: 30px;
+}
+
+.import-progress-bar {
+    background-color: #0073aa;
+    height: 100%;
+    border-radius: 3px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.import-progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #444;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.imported-success {
+    background-color: #f0fff0 !important;
+}
+
+/* Result Styles */
+#wayback-import-result {
+    margin-top: 30px;
+}
+
+/* Blog Post Links Styles */
+.wayback-blog-post-links {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.wayback-blog-post-links h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.wayback-blog-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wayback-blog-link-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+.wayback-blog-link-item:hover {
+    background-color: #f0f0f0;
+}
+
+.wayback-blog-link {
+    display: block;
+    text-decoration: none;
+    color: #0073aa;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.wayback-blog-link:hover {
+    color: #00a0d2;
+}
+
+.blog-post-links-actions {
+    margin: 10px 0;
+}
+
+.blog-post-links-actions .spinner {
+    float: none;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+/* Import Type Descriptions */
+.import-type-description {
+    background: #f9f9f9;
+    border-left: 4px solid #0073aa;
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+
+.import-type-description p {
+    margin: 0;
+    font-style: italic;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 782px) {
+    .wayback-meta-item {
+        flex: 1 0 100%;
+    }
+}
+
+/* Custom Fields */
+.wayback-preview-custom-fields {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+/* Custom Selectors */
+.custom-field-selectors-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.custom-field-selectors-input select,
+.custom-field-selectors-input input {
+    margin-right: 5px;
+}
+
+#attribute-type {
+    min-width: 150px;
+}
+
+#custom-attribute-input {
+    width: 150px;
+}
+
+.custom-fields-container {
+    gap: 20px;
+}
+
+.custom-fields-search,
+.custom-fields-list {
+    flex: 1;
+    min-width: 300px;
+}
+
+.custom-field-search-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 5px;
+}
+
+.custom-field-search-row input {
+    flex: 1;
+}
+
+#custom-field-search-list {
+    margin: 10px 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.custom-field-search-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    margin-bottom: 5px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.custom-field-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 5px;
+}
+
+.custom-field-row input {
+    flex: 1;
+}
+
+.custom-field-key {
+    width: 40%;
+}
+
+.custom-field-value {
+    width: 60%;
+}
+
+.remove-custom-field,
+.remove-search-key {
+    cursor: pointer;
+    color: #a00;
+}
+
+#extract-custom-fields-btn {
+    margin-top: 10px;
+}
+
+/* Custom Selectors Preview */
+#custom-selectors-preview table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#custom-selectors-preview th,
+#custom-selectors-preview td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#custom-selectors-preview th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#custom-selectors-preview tr.found {
+    background-color: #f0fff0;
+}
+
+#custom-selectors-preview tr.not-found {
+    background-color: #fff0f0;
+}
+
+#custom-selectors-preview td:nth-child(3) {
+    /* Attribute column */
+    color: #0073aa;
+    font-style: italic;
+}

@@ -1,0 +1,159 @@
+/**
+ * Taxonomies CSS for Wayback WordPress Importer.
+ *
+ * @since      1.0.0
+ * @package    Wayback_WP_Importer
+ */
+
+/* Section styles */
+.wayback-section {
+    margin: 25px 0;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.wayback-section h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #23282d;
+    font-size: 16px;
+}
+
+.wayback-section-description {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.wayback-section-content {
+    padding: 10px 0;
+}
+
+/* Post Type Selector */
+.wayback-post-type-selector {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.wayback-post-type-selector label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.wayback-post-type-selector select {
+    min-width: 200px;
+}
+
+/* Taxonomies Container */
+.taxonomies-container {
+    margin-top: 15px;
+}
+
+/* Taxonomy UI Styles */
+.taxonomy-section {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.taxonomy-section h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Hierarchical Taxonomies (Categories) */
+.hierarchical-taxonomy {
+    margin-top: 10px;
+}
+
+.hierarchical-taxonomy ul {
+    margin-left: 20px;
+}
+
+.hierarchical-taxonomy label {
+    margin-left: 5px;
+}
+
+.hierarchical-terms-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+.hierarchical-terms-list li {
+    margin: 0;
+    padding: 3px 0;
+    list-style: none;
+}
+
+.hierarchical-terms-list ul.children {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.hierarchical-terms-list label {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Non-Hierarchical Taxonomies (Tags) */
+.non-hierarchical-taxonomy {
+    margin-top: 10px;
+}
+
+.taxonomy-select {
+    width: 100%;
+    min-height: 100px;
+}
+
+/* Add New Term Field */
+.add-new-term-field {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.add-new-term-field input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Select2 Customizations */
+.select2-container--default .select2-selection--multiple {
+    border-color: #ddd;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #007cba;
+    box-shadow: 0 0 0 1px #007cba;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 2px 6px;
+}
+
+/* New Term Indicator */
+label[for^="term-new-"] {
+    color: #007cba;
+    font-style: italic;
+}
+
+/* Spinner */
+#taxonomies-container .spinner {
+    float: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
